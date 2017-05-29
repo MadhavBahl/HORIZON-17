@@ -1,0 +1,271 @@
+@font-face{
+    font-family:rb;
+    src:url("roboto.thin.ttf");
+}
+
+
+@font-face{
+    font-family:rb;
+    src:url("roboto.bold.ttf");
+}
+
+body,html {
+    width: 100%;
+    margin: 0;
+}
+
+.slide-show {
+    height: 100%;
+}
+
+.slide-show-window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.slide-show-slides {
+    height: 100%;
+    width: 400%;
+    font-size: 0;
+    transition: transform 2s;
+}
+
+.slide-show-tile {
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#tile-1 {
+    background-image:url('l1.jpg');
+}
+
+#tile-2 {
+    background-image:url('l2.jpg');
+}
+
+#tile-3 {
+    background-image:url('l3.jpg');
+}
+
+#tile-4 {
+    background-image:url('l4.jpg');
+}
+
+
+.main-content{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.adg-logo{
+    height: 7%;
+    width: auto;
+    margin: 2% 0;
+}
+
+.jeevan-logo {
+    height:22%;
+    width:47%;
+    margin:1% auto;
+    position: relative;
+    margin-top: -1%;
+    color: white;
+}
+
+.jeevan-logo:after{
+    position:absolute;
+    content:'';
+    height:6px;
+    width:130%;
+    bottom:-5%;
+    left:-15%;
+    background: white;
+}
+
+#outercover{
+  width:80%;
+  margin-left:10%;
+  margin-right:10%;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 2%;
+}
+#mainbody{
+  z-index: 9999999;
+  background-color: rgba(0,0,0,0.4);
+  width:100%;
+}
+
+.sub-title{
+    font-size: 40px;
+    color: white;
+    font-family: rb;
+    opacity: 0.8;
+}
+
+.register{
+    height: 7%;
+    width:17%;
+    outline: none;
+    border: none;
+    background: rgba(29,197,159,1);
+    border-radius: 5px;
+    margin: 2% 0;
+    color: rgb(240,240,240);
+    font-family: rb;
+    text-transform: uppercase;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@keyframes pop{
+    from{
+        transform:scale(0);
+    }
+    to{
+        transform:scale(1);
+    }
+}
+
+@keyframes fade{
+    0%{
+        opacity:0;
+    }
+    40%{
+        opacity:1;
+    }
+    60%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+@media only screen and (max-width:786px) and (orientation:portrait){
+
+.adg-logo{
+    margin-top: 25%;
+}
+
+.jeevan-logo {
+    margin: 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.jeevan-logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.jeevan-logo:after {
+    left: 0;
+    width: 100%;
+}
+
+.sub-title {
+    margin-top: 10%;
+    font-size: 5px;
+}
+
+
+[type="text"]{
+    height: 10%;
+}
+
+.content {
+    width: 100%;
+}
+.con p,.static-con p{
+    font-size: 10px;
+}
+
+.con span,.static-con span {
+    font-size:20px;
+}
+
+.register {
+    width: 35%;
+    font-size: 20px;
+}
+
+.submit-button, .confirm-button {
+    font-size: 15px;
+}
+
+}
+
+
+@media only screen and (max-width:786px) and (orientation:landscape){
+
+.sub-title {
+    font-size: 20px;
+}
+
+.adg-logo {
+    margin-top: 4%;
+}
+
+.content {
+    width: 100%;
+}
+
+[type="text"]{
+    height: 70px;
+}
+
+.register {
+    font-size: 15px;
+    margin-top: 7%;
+}
+
+.modal-content {
+    height: 300px;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 20px;
+}
+
+.con p,.static-con p{
+    font-size: 10px;
+}
+
+.modal-content p{
+    font-size: 30px;
+}
+
+.modal-content p{
+    margin-top: -1%;
+}
+
+[type="text"]{
+    height: 8%;
+    font-size: 15px;
+}
+
+label {
+    font-size: 15px;
+}
+
+.submit-button, .confirm-button {
+    font-size: 10px;
+}
+
+.register {
+    margin-top: 3.5%;
+}
+
+}
